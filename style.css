@@ -1,0 +1,246 @@
+/* ===== Global Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== Body ===== */
+body {
+    background: radial-gradient(circle at top, #1b1f2a, #0d0f16);
+    color: #e6e6eb;
+    min-height: 100vh;
+}
+
+/* ===== Header ===== */
+header {
+    background: linear-gradient(135deg, #4f46e5, #0ea5e9);
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+header h1 {
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+
+header p {
+    opacity: 0.9;
+    margin-top: 6px;
+}
+
+/* ===== Emoji Face ===== */
+.face {
+    width: 130px;
+    height: 130px;
+    background: radial-gradient(circle at top, #ffe066, #facc15);
+    border-radius: 50%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 15px 40px rgba(250,204,21,0.35);
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}
+
+/* ===== Eyes ===== */
+.eye {
+    width: 28px;
+    height: 28px;
+    background: #ffffff;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.pupil {
+    width: 14px;
+    height: 14px;
+    background: #111;
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    transition: transform 0.05s linear;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+    background: linear-gradient(90deg, #38bdf8, #818cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    color: #b5b8c5;
+    max-width: 600px;
+    margin: auto;
+    font-size: 17px;
+}
+
+/* ===== Buttons ===== */
+.buttons {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    background: linear-gradient(135deg, #6366f1, #22d3ee);
+    color: white;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 999px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 10px 30px rgba(99,102,241,0.35);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(34,211,238,0.45);
+}
+
+/* ===== Content Section ===== */
+.content {
+    background: #131722;
+    margin: 50px auto;
+    padding: 40px;
+    max-width: 700px;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+}
+
+.content ul {
+    list-style: none;
+}
+
+.content li {
+    font-size: 18px;
+    margin: 15px 0;
+    color: #d1d5db;
+}
+
+/* ===== Signup Form ===== */
+.signup-form input,
+.signup-form select {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border-radius: 10px;
+    border: none;
+    background: #1f2433;
+    color: #e5e7eb;
+    outline: none;
+}
+
+.signup-form input:focus,
+.signup-form select:focus {
+    box-shadow: 0 0 0 2px #6366f1;
+}
+
+/* ===== Footer ===== */
+footer {
+    margin-top: 60px;
+    padding: 20px;
+    text-align: center;
+    color: #9ca3af;
+    font-size: 14px;
+}
+/* ===== Anime Face ===== */
+.anime-face {
+    width: 160px;
+    height: 160px;
+    background: radial-gradient(circle at top, #fcd7b6, #f1bfa0);
+    border-radius: 50%;
+    margin: 40px auto;
+    position: relative;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.6);
+    animation: float 4s ease-in-out infinite;
+}
+
+/* ===== Hair ===== */
+.hair {
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    width: 180px;
+    height: 90px;
+    background: linear-gradient(135deg, #2b0f0f, #5b1b1b);
+    border-radius: 60% 60% 40% 40%;
+    z-index: 2;
+}
+
+/* ===== Scar ===== */
+.scar {
+    position: absolute;
+    top: 35px;
+    left: 25px;
+    width: 45px;
+    height: 12px;
+    background: linear-gradient(90deg, #7a1f1f, #b91c1c);
+    border-radius: 50%;
+    transform: rotate(-15deg);
+    opacity: 0.9;
+}
+
+/* ===== Eyes Container ===== */
+.eyes {
+    position: absolute;
+    top: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* ===== Eyes ===== */
+.eye {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+
+/* ===== Pupils ===== */
+.pupil {
+    width: 14px;
+    height: 14px;
+    background: radial-gradient(circle, #1e3a8a, #020617);
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    transition: transform 0.05s linear;
+}
+/* Hide camera video */
+#video {
+    display: none;
+}
+
+/* ===== Floating Animation ===== */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Green Valley School</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Green Valley School</h1>
+    <p>Learning Today, Leading Tomorrow</p>
+</header>
+
+<!-- Anime Face -->
+<div class="anime-face">
+    <div class="hair"></div>
+    <div class="scar"></div>
+
+    <div class="eyes">
+        <div class="eye">
+            <div class="pupil"></div>
+        </div>
+        <div class="eye">
+            <div class="pupil"></div>
+        </div>
+    </div>
+</div>
+
+<section class="hero">
+    <h2>Welcome to Our School</h2>
+    <p>Quality education in a safe and friendly environment.</p>
+
+    <div class="buttons">
+        <a href="facilities.html" class="btn">🏫 Facilities</a>
+        <a href="signup.html" class="btn">📝 Sign Up</a>
+    </div>
+</section>
+<!-- Hidden Camera Feed -->
+<video id="video" autoplay playsinline></video>
+
+<!-- MediaPipe -->
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+
+<script src="camera-track.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
